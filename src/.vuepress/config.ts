@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
+
 export default defineUserConfig({
   base: "/",
 
@@ -22,10 +23,12 @@ export default defineUserConfig({
       // 为分类和标签添加索引
       customFields: [
         {
+          // @ts-ignore
           getter: (page) => page.frontmatter.category,
           formatter: "分类：$content",
         },
         {
+          // @ts-ignore
           getter: (page) => page.frontmatter.tag,
           formatter: "标签：$content",
         },

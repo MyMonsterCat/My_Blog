@@ -20,7 +20,7 @@ export default hopeTheme({
 
     darkmode: "toggle",
 
-    repo: "https://github.com/MyMonsterCat",
+    repo: "https://github.com/MyMonsterCat/note",
     repoLabel: "GitHub",
     repoDisplay: true,
 
@@ -52,13 +52,6 @@ export default hopeTheme({
             },
         },
     },
-
-    encrypt: {
-        config: {
-            "/demo/encrypt.html": ["1234"],
-        },
-    },
-
 
     plugins: {
         comment: {
