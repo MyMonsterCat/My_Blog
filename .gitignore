@@ -1,0 +1,12 @@
+.idea/
+/node_modules
+/package-lock.json
+*.drawio.bkp
+.DS_Store
+.vscode/
+.cache/
+.temp/
+dist/
+packages/*/lib/
+
+
