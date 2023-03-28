@@ -1,4 +1,7 @@
 $theme-color: #118bdc;
-//$sidebar-width: 20rem;
-//$sidebar-mobile-width: 16rem;
-//$content-width: 60em;
+$content-width: 60em;
+
+$border-color: (
+        light: #ddd,
+        dark: #444,
+);

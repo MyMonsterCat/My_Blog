@@ -13,8 +13,9 @@ export default hopeTheme({
 
     fullscreen: true,
 
-    iconAssets: "//at.alicdn.com/t/c/font_3981663_mkjrhxmuob.css",
+    iconAssets: "//at.alicdn.com/t/c/font_3981663_ywgrcm3ukqg.css",
 
+    favicon: "/favicon.png",
     logo: "/favicon.png",
     logoDark: "/logo.png",
 
@@ -23,6 +24,16 @@ export default hopeTheme({
     repo: "https://github.com/MyMonsterCat/note",
     repoLabel: "GitHub",
     repoDisplay: true,
+
+    pageInfo: [
+        "Author",
+        "Category",
+        "Tag",
+        "Date",
+        "Original",
+        "Word",
+        "ReadingTime",
+    ],
 
     themeColor: {
         blue: "#2196f3",
@@ -34,7 +45,7 @@ export default hopeTheme({
     navbarLayout: {
         start: ["Brand"],
         center: [],
-        end: ["Outlook", "Search", "Links", "Repo"],
+        end: ["Links", "Search", "Repo", "Outlook"],
     },
 
     locales: {
