@@ -13,7 +13,7 @@ export default hopeTheme({
 
     fullscreen: true,
 
-    iconAssets: "//at.alicdn.com/t/c/font_3981663_ywgrcm3ukqg.css",
+    iconAssets: "//at.alicdn.com/t/c/font_3981663_1jdvdcv2fsii.css",
 
     favicon: "/favicon.png",
     logo: "/favicon.png",
@@ -44,8 +44,8 @@ export default hopeTheme({
 
     navbarLayout: {
         start: ["Brand"],
-        center: [],
-        end: ["Links", "Search", "Repo", "Outlook"],
+        center: ["Search"],
+        end: ["Links", "Outlook", "Repo"],
     },
 
     locales: {

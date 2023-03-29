@@ -1,14 +1,14 @@
-export const books = [
-  {
-    text: "计算机基础",
-    link: "cs-basics",
-    icon: "computer",
-  },
-  {
-    text: "数据库",
-    link: "database",
-    icon: "database",
-  },
+export const devTool = [
+    {
+        text: "计算机基础",
+        link: "cs-basics",
+        icon: "computer",
+    },
+    {
+        text: "数据库",
+        link: "database",
+        icon: "database",
+    },
   {
     text: "搜索引擎",
     link: "search-engine",
