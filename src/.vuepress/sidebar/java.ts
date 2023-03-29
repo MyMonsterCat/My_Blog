@@ -2,7 +2,7 @@ export const java = [
     {
         text: "java基础",
         icon: "java",
-        collapsable: true,
+        collapsible: true,
         children: [
             {
                 text: "面向对象基础",
@@ -25,7 +25,7 @@ export const java = [
     {
         text: "java进阶",
         icon: "java",
-        collapsable: true,
+        collapsible: true,
         children: [
             {
                 text: "JVM",
