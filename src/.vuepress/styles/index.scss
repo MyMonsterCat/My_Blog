@@ -3,3 +3,27 @@
   box-shadow: 1px 1px 8px #c7c1c1;
   padding-left: 1.5em;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 900;
+  color: var(--theme-color);
+}
+
+blockquote {
+  border-color: #42b983;
+  color: #2c3e50;
+  padding: 0.5rem 0 0.25rem 1rem;
+}
+
+p, ul, ol {
+  line-height: 1.8;
+}
+
+body {
+  font-size: 16px;
+}
+

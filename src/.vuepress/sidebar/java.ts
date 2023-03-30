@@ -1,12 +1,10 @@
 export const java = [
     {
-        text: "java基础",
-        icon: "java",
-        collapsible: true,
+        text: "✍️ Java基础知识",
+        collapsible: false,
         children: [
             {
                 text: "面向对象基础",
-                icon: "oo",
                 prefix: "/java/base/object-oriented",
                 children: [
                     "base01",
@@ -14,7 +12,6 @@ export const java = [
             },
             {
                 text: "常用工具类",
-                icon: "tool",
                 prefix: "/java/base/tool",
                 children: [
                     "base01",
@@ -23,21 +20,19 @@ export const java = [
         ],
     },
     {
-        text: "java进阶",
-        icon: "java",
-        collapsible: true,
+        text: "✍️ Java进阶知识",
+        collapsible: false,
         children: [
             {
-                text: "JVM",
-                icon: "jvm",
+                text: "JVM相关",
                 prefix: "/java/senior/jvm",
                 children: [
-                    "base01",
+                    "memory-structure",
+                    "gc",
                 ],
             },
             {
                 text: "并发编程",
-                icon: "juc",
                 prefix: "/java/senior/juc",
                 children: [
                     "base01",
