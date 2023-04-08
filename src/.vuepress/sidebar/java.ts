@@ -7,7 +7,7 @@ export const java = [
                 text: "面向对象基础",
                 prefix: "/java/base/object-oriented",
                 children: [
-                    "base01",
+                    "reflex-mechanism",
                 ],
             },
             {

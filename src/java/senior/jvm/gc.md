@@ -26,7 +26,7 @@ comment: false
 - 每次对象被引用时，都需要去更新计数器，有一点时间开销
 - 浪费 CPU 资源，即使内存够用，仍然在运行时进行计数器的统计。
 
-<img src="https://monster-note.oss-cn-hangzhou.aliyuncs.com/img/202303300959630.png" alt="引用计数法" style="zoom: 67%;" />
+<img src="https://monster-note.oss-cn-hangzhou.aliyuncs.com/img/jvm/202303300959630.png" alt="引用计数法" style="zoom: 67%;" />
 
 ### 可达性分析算法
 
