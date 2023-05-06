@@ -64,6 +64,12 @@ export default hopeTheme({
         },
     },
 
+    encrypt: {
+        config: {
+            "/about/recollect": ["lcmonster1203"],
+        },
+    },
+
     plugins: {
         comment: {
             provider: "Waline",

@@ -120,8 +120,9 @@ export const zhNavbar = navbar([
         icon: "about",
         prefix: "/about",
         children: [
-            {text: "关于作者", icon: "author", link: "/author/"},
-            {text: "更新计划", icon: "plan", link: "/plan/"},
+            {text: "关于作者", icon: "author", link: "/author"},
+            {text: "更新计划", icon: "plan", link: "/plan"},
+            {text: "拾忆", icon: "plan", link: "/recollect"},
         ],
     },
 ]);

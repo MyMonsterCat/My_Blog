@@ -1,5 +1,6 @@
 import {sidebar} from "vuepress-theme-hope";
 import {java} from "./java";
+import {about} from "./about";
 
 export const zhSidebar = sidebar({
 
@@ -24,7 +25,7 @@ export const zhSidebar = sidebar({
 
     "/docker/": "structure",
 
-    "/about/": "structure",
+    "/about/": about,
 
 
     // "/": [
