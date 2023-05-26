@@ -29,7 +29,7 @@ export const zhNavbar = navbar([
                 prefix: "/java/base",
                 children: [
                     {text: "面向对象基础", icon: "oo", link: "/object-oriented/"},
-                    {text: "常用工具类", icon: "tool", link: "/tool/"},
+                    {text: "集合", icon: "tool", link: "/jihe/"},
                 ],
             },
             {
