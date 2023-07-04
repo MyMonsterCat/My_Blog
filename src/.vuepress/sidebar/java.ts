@@ -1,4 +1,4 @@
-export const java = [
+export const JavaSideBar = [
     {
         text: "✍️ Java基础知识",
         children: [

@@ -31,3 +31,12 @@ body {
   margin-top: 7.5rem;
 }
 
+.sidebar-heading .title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  //color: var(--theme-color);
+}
+
+.sidebar-link:hover, .sidebar-heading:hover {
+  color: var(--theme-color);
+}

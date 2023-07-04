@@ -1,4 +1,4 @@
-export const about = [
+export const AboutSideBar = [
     {
         text: "个人介绍 Q&A",
         collapsible: false,

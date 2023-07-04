@@ -1,6 +1,7 @@
 import {sidebar} from "vuepress-theme-hope";
-import {java} from "./java";
-import {about} from "./about";
+import {JavaSideBar} from "./java";
+import {MySQLSidebar} from "./sql";
+import {AboutSideBar} from "./about";
 
 export const zhSidebar = sidebar({
 
@@ -9,11 +10,11 @@ export const zhSidebar = sidebar({
 
     "/books/": "structure",
 
-    "/java/": java,
+    "/java/": JavaSideBar,
 
     "/computer/": "structure",
 
-    "/sql/": "structure",
+    "/sql/": MySQLSidebar,
 
     "/frame/": "structure",
 
@@ -25,7 +26,7 @@ export const zhSidebar = sidebar({
 
     "/docker/": "structure",
 
-    "/about/": about,
+    "/about/": AboutSideBar,
 
 
     // "/": [

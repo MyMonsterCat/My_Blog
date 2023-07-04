@@ -60,8 +60,8 @@ export const zhNavbar = navbar([
         icon: "sql",
         prefix: "/sql",
         children: [
-            {text: "MySQL基础", icon: "mysql-base", link: "/mysql-base/"},
-            {text: "MySQL进阶", icon: "mysql-senior", link: "/mysql-senior/"},
+            {text: "MySQL", icon: "mysql-base", link: "/mysql/README.md"},
+            // {text: "MySQL进阶", icon: "mysql-senior", link: "/mysql/base/how_select"},
             {text: "Redis", icon: "redis", link: "/redis/"},
         ],
     },
