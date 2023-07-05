@@ -1,4 +1,17 @@
 export const MySQLSidebar = [
+
+    {
+        text: "写在前面",
+        prefix: "/sql/mysql/",
+        collapsible: true,
+        children: [
+            {
+                text: "序言",
+                link: "README.md",
+            },
+        ],
+    },
+
     {
         text: "一、基础篇",
         prefix: "/sql/mysql/base/",

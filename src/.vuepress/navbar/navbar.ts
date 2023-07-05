@@ -9,15 +9,15 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "开发工具",
-        icon: "dev-tool",
-        link: "/development-tool/"
-    },
-
-    {
-        text: "技术书籍",
-        icon: "book",
-        link: "/books/"
+        text: "计算机基础",
+        icon: "computer",
+        prefix: "/computer",
+        children: [
+            {text: "数据结构", icon: "data-structure", link: "/data-structure/"},
+            {text: "计算机网络", icon: "network", link: "/network/"},
+            {text: "操作系统", icon: "os", link: "/os/"},
+            {text: "计算机组成原理", icon: "composition-principle", link: "/composition-principle/"},
+        ],
     },
 
     {
@@ -44,27 +44,6 @@ export const zhNavbar = navbar([
             },
         ],
     },
-    {
-        text: "计算机基础",
-        icon: "computer",
-        prefix: "/computer",
-        children: [
-            {text: "计算机网络", icon: "network", link: "/network/"},
-            {text: "操作系统", icon: "os", link: "/os/"},
-            {text: "数据结构", icon: "data-structure", link: "/data-structure/"},
-            {text: "计算机组成原理", icon: "composition-principle", link: "/composition-principle/"},
-        ],
-    },
-    {
-        text: "数据库",
-        icon: "sql",
-        prefix: "/sql",
-        children: [
-            {text: "MySQL", icon: "mysql-base", link: "/mysql/README.md"},
-            // {text: "MySQL进阶", icon: "mysql-senior", link: "/mysql/base/how_select"},
-            {text: "Redis", icon: "redis", link: "/redis/"},
-        ],
-    },
 
     {
         text: "开发基础与框架",
@@ -80,6 +59,17 @@ export const zhNavbar = navbar([
     },
 
     {
+        text: "数据库",
+        icon: "sql",
+        prefix: "/sql",
+        children: [
+            {text: "MySQL", icon: "mysql-base", link: "/mysql/README.md"},
+            // {text: "MySQL进阶", icon: "mysql-senior", link: "/mysql/base/how_select"},
+            {text: "Redis", icon: "redis", link: "/redis/"},
+        ],
+    },
+
+    {
         text: "消息队列",
         icon: "mq",
         prefix: "/mq",
@@ -89,29 +79,52 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "微服务",
+        text: "进阶",
         icon: "cloud",
         prefix: "/cloud",
         children: [
-            {text: "SpringCloud", icon: "SpringCloudAlibaba", link: "/SpringCloud-Ali/"},
+            {
+                text: "微服务",
+                icon: "cloud",
+                prefix: "/cloud",
+                children: [
+                    {text: "SpringCloud", icon: "SpringCloudAlibaba", link: "/SpringCloud-Ali/"},
+                ],
+            },
+            {
+                text: "分布式架构",
+                icon: "distributed-architecture",
+                prefix: "/distributed-architecture",
+                children: [
+                    {text: "分布式数据库", icon: "drds", link: "/drds/"},
+                ],
+            },
+            {
+                text: "持续集成与容器化",
+                icon: "docker",
+                prefix: "/docker",
+                children: [
+                    {text: "Docker", icon: "docker", link: "/jvm/"},
+                ],
+            },
         ],
     },
 
     {
-        text: "分布式架构",
-        icon: "distributed-architecture",
-        prefix: "/distributed-architecture",
+        text: "常用工具/资料",
+        icon: "mq",
+        prefix: "/mq",
         children: [
-            {text: "分布式数据库", icon: "drds", link: "/drds/"},
-        ],
-    },
-
-    {
-        text: "持续集成与容器化",
-        icon: "docker",
-        prefix: "/docker",
-        children: [
-            {text: "Docker", icon: "docker", link: "/jvm/"},
+            {
+                text: "开发工具",
+                icon: "dev-tool",
+                link: "/development-tool/"
+            },
+            {
+                text: "技术书籍",
+                icon: "book",
+                link: "/books/"
+            },
         ],
     },
 

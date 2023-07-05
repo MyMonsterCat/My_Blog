@@ -37,6 +37,14 @@ body {
   //color: var(--theme-color);
 }
 
+.sidebar a {
+  font-weight: 300;
+}
+
 .sidebar-link:hover, .sidebar-heading:hover {
+  color: var(--theme-color);
+}
+
+strong {
   color: var(--theme-color);
 }
