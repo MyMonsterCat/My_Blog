@@ -28,12 +28,7 @@ export default hopeTheme({
     pageInfo: false,
     breadcrumb: false,
 
-    themeColor: {
-        blue: "#2196f3",
-        red: "#f26d6d",
-        green: "#3eaf7c",
-        orange: "#fb9b5f",
-    },
+    themeColor: true,
 
     navbarLayout: {
         start: ["Brand"],
@@ -81,7 +76,6 @@ export default hopeTheme({
             demo: true,
             echarts: true,
             figure: true,
-            flowchart: true,
             gfm: true,
             imgLazyload: true,
             imgSize: true,
@@ -92,7 +86,7 @@ export default hopeTheme({
             playground: {
                 presets: ["ts", "vue"],
             },
-            presentation: {
+            revealJs: {
                 plugins: ["highlight", "math", "search", "notes", "zoom"],
             },
             stylize: [
