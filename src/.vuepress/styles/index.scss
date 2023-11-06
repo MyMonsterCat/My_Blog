@@ -48,3 +48,17 @@ body {
 strong {
   color: var(--theme-color);
 }
+
+.hint-container.details summary {
+  color: var(--theme-color);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.hint-container.details {
+  background: white;
+}
+
+.hint-container.details summary::before {
+  background: white;
+}

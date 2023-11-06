@@ -1,13 +1,17 @@
 # MySQL介绍
 
-本文非原创，转自[小林Coding-《图解MySQL》](https://xiaolincoding.com/mysql/)，部分地方结合自己的理解与网上的资料可能有所更改，不做另行说明！
-
 目前已经更新好的文章：
+
+- **面试汇总篇**:point_down:
+
+    - [基础面试题一](/sql/mysql/interview/base_1.md)
+    - [事务面试题](/sql/mysql/interview/transaction.md)
+
+下面的内容本文非原创，转自[小林Coding-《图解MySQL》](https://xiaolincoding.com/mysql/)，部分地方结合自己的理解与网上的资料可能有所更改，不做另行说明！
 
 - **基础篇**:point_down:
 
 	- [执行一条 SQL 查询语句，期间发生了什么？](/sql/mysql/base/how_select.md)
-	- [MySQL 一行记录是怎么存储的？](/sql/mysql/base/row_format.md)
 
 - **索引篇** :point_down:
 

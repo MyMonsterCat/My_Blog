@@ -69,7 +69,7 @@ id 值判断是否为 NULL，如果不为 NULL，就将 count 变量加 1。
 
 但是，如果表里有二级索引时，InnoDB 循环遍历的对象就不是聚簇索引，而是二级索引。
 
-![图片](https://img-blog.csdnimg.cn/img_convert/aac550602ef1022e0b45020dbe0f716a.png)
+![图片](https://monster-note.oss-cn-hangzhou.aliyuncs.com/img/sql/mysql/202307081149530.png)
 
 这是因为相同数量的二级索引记录可以比聚簇索引记录占用更少的存储空间，所以二级索引树比聚簇索引树小，这样遍历二级索引的 I/O
 成本比遍历聚簇索引的 I/O 成本小，因此「优化器」优先选择的是二级索引。

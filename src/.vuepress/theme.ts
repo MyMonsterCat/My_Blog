@@ -72,7 +72,6 @@ export default hopeTheme({
         //     light: "ateliersulphurpool-light",
         // },
         // autoCatalog: false,
-
         // all features are enabled for demo, only preserve features you need here
         mdEnhance: {
             align: true,
