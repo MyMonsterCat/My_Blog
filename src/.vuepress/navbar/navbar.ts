@@ -3,7 +3,7 @@ import {navbar} from "vuepress-theme-hope";
 export const zhNavbar = navbar([
 
     {
-        text: "开源项目",
+        text: "更新日志",
         icon: "home",
         link: "/home.md"
     },
@@ -76,10 +76,10 @@ export const zhNavbar = navbar([
 
     {
         text: "人工智能",
-        icon: "computer",
-        prefix: "/computer",
+        icon: "ai",
+        prefix: "/ai",
         children: [
-            {text: "OCR", icon: "data-structure", link: "/data-structure/"},
+            {text: "OCR", icon: "data-structure", link: "/github/rapid-ocr.md"},
         ],
     },
 
