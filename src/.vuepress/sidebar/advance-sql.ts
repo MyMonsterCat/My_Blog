@@ -2,7 +2,7 @@ export const MySQLSidebar = [
 
     {
         text: "写在前面",
-        prefix: "/sql/mysql/",
+        prefix: "/advance/sql/mysql/",
         collapsible: true,
         children: [
             {
@@ -14,7 +14,7 @@ export const MySQLSidebar = [
 
     {
         text: "一、基础篇",
-        prefix: "/sql/mysql/base/",
+        prefix: "/advance/sql/mysql/base/",
         collapsible: true,
         children: [
             {
@@ -29,7 +29,7 @@ export const MySQLSidebar = [
     },
     {
         text: "二、索引篇",
-        prefix: "/sql/mysql/index/",
+        prefix: "/advance/sql/mysql/index/",
         collapsible: true,
         children: [
             {
@@ -64,7 +64,7 @@ export const MySQLSidebar = [
     },
     {
         text: "三、事务篇",
-        prefix: "/sql/mysql/transaction/",
+        prefix: "/advance/sql/mysql/transaction/",
         collapsible: true,
         children: [
             {
@@ -79,7 +79,7 @@ export const MySQLSidebar = [
     },
     {
         text: "四、锁篇",
-        prefix: "/sql/mysql/lock/",
+        prefix: "/advance/sql/mysql/lock/",
         collapsible: true,
         children: [
             {
@@ -110,7 +110,7 @@ export const MySQLSidebar = [
     },
     {
         text: "五、日志篇",
-        prefix: "/sql/mysql/log/",
+        prefix: "/advance/sql/mysql/log/",
         collapsible: true,
         children: [
             {
@@ -121,7 +121,7 @@ export const MySQLSidebar = [
     },
     {
         text: "六、内存篇",
-        prefix: "/sql/mysql/buffer_pool/",
+        prefix: "/advance/sql/mysql/buffer_pool/",
         collapsible: true,
         children: [
             {

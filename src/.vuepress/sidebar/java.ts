@@ -1,6 +1,6 @@
 export const JavaSideBar = [
     {
-        text: "✍️ Java基础知识",
+        text: "Java基础",
         children: [
             {
                 text: "面向对象基础",
@@ -23,7 +23,7 @@ export const JavaSideBar = [
         ],
     },
     {
-        text: "✍️ Java进阶知识",
+        text: "Java高级",
         children: [
             {
                 text: "JVM相关",

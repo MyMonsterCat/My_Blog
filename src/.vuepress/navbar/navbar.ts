@@ -3,7 +3,7 @@ import {navbar} from "vuepress-theme-hope";
 export const zhNavbar = navbar([
 
     {
-        text: "首页",
+        text: "开源项目",
         icon: "home",
         link: "/home.md"
     },
@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "Java相关",
+        text: "Java",
         icon: "java",
         children: [
             {
@@ -33,7 +33,7 @@ export const zhNavbar = navbar([
                 ],
             },
             {
-                text: "Java进阶",
+                text: "Java高级",
                 prefix: "/java/senior",
                 children: [
                     {text: "JVM", icon: "jvm", link: "/jvm/"},
@@ -42,47 +42,18 @@ export const zhNavbar = navbar([
                     {text: "新特性", icon: "new-features", link: "/new-features/"},
                 ],
             },
-        ],
-    },
-
-    {
-        text: "开发基础与框架",
-        icon: "frame",
-        prefix: "/frame",
-        children: [
-            {text: "Spring", icon: "spring", link: "/spring/"},
-            {text: "SpringMvc", icon: "spring", link: "/springMvc/"},
-            {text: "SpringBoot", icon: "spring", link: "/springBoot/"},
-            {text: "常用类库", icon: "class-libraries", link: "/class-libraries/"},
-            {text: "单元测试", icon: "test", link: "/test/"},
-        ],
-    },
-
-    {
-        text: "数据库",
-        icon: "sql",
-        prefix: "/sql",
-        children: [
-            {text: "MySQL", icon: "mysql-base", link: "/mysql/README.md"},
-            // {text: "MySQL进阶", icon: "mysql-senior", link: "/mysql/base/how_select"},
-            {text: "Redis", icon: "redis", link: "/redis/"},
-        ],
-    },
-
-    {
-        text: "消息队列",
-        icon: "mq",
-        prefix: "/mq",
-        children: [
-            {text: "RocketMQ", icon: "rocketmq", link: "/rocketmq/"},
-        ],
-    },
-
-    {
-        text: "进阶",
-        icon: "cloud",
-        prefix: "/cloud",
-        children: [
+            {
+                text: "开发框架",
+                icon: "frame",
+                prefix: "/java/senior/frame",
+                children: [
+                    {text: "Spring", icon: "spring", link: "/spring/"},
+                    {text: "SpringMvc", icon: "spring", link: "/springMvc/"},
+                    {text: "SpringBoot", icon: "spring", link: "/springBoot/"},
+                    {text: "常用类库", icon: "class-libraries", link: "/class-libraries/"},
+                    {text: "单元测试", icon: "test", link: "/test/"},
+                ],
+            },
             {
                 text: "微服务",
                 icon: "cloud",
@@ -99,6 +70,41 @@ export const zhNavbar = navbar([
                     {text: "分布式数据库", icon: "drds", link: "/drds/"},
                 ],
             },
+
+        ],
+    },
+
+    {
+        text: "人工智能",
+        icon: "computer",
+        prefix: "/computer",
+        children: [
+            {text: "OCR", icon: "data-structure", link: "/data-structure/"},
+        ],
+    },
+
+    {
+        text: "常用组件",
+        icon: "cloud",
+        prefix: "/advance",
+        children: [
+            {
+                text: "数据库",
+                icon: "sql",
+                prefix: "/sql",
+                children: [
+                    {text: "MySQL", icon: "mysql-base", link: "/mysql/README.md"},
+                    {text: "Redis", icon: "redis", link: "/redis/"},
+                ],
+            },
+            {
+                text: "消息队列",
+                icon: "mq",
+                prefix: "/mq",
+                children: [
+                    {text: "RocketMQ", icon: "rocketmq", link: "/rocketmq/"},
+                ],
+            },
             {
                 text: "持续集成与容器化",
                 icon: "docker",
@@ -111,9 +117,9 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "常用工具/资料",
+        text: "工具/资料",
         icon: "mq",
-        prefix: "/mq",
+        prefix: "/tool",
         children: [
             {
                 text: "开发工具",
