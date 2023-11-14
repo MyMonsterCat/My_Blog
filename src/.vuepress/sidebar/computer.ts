@@ -15,6 +15,7 @@ export const ComputerSideBar = [
                 prefix: "/computer/os/",
                 children: [
                     "2-1",
+                    "2-2",
                 ],
             },
         ],
