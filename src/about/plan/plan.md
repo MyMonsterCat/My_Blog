@@ -8,9 +8,9 @@ title: 学习记录
 
 算法
 
-- [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/)
+- 215 数组中的第K个最大元素
 
-- [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
+- 94二叉树的中序遍历
 
 Java
 
@@ -24,4 +24,12 @@ Java
 - 104 二叉树的最大深度
 
 - 200 岛屿数量
+
+### 2023年12月3日
+
+算法
+
+- 128 最长连续序列
+
+- 49字母异位词分组
 
