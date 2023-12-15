@@ -13,7 +13,7 @@ export const zhNavbar = navbar([
         icon: "computer",
         prefix: "/computer",
         children: [
-            {text: "数据结构", icon: "data-structure", link: "/data-structure/"},
+            {text: "数据结构与算法", icon: "data-structure", link: "/data-structure/"},
             {text: "计算机网络", icon: "network", link: "/network/"},
             {text: "操作系统", icon: "os", link: "/os/"},
             {text: "计算机组成原理", icon: "composition-principle", link: "/composition-principle/"},
