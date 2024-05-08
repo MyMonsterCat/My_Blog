@@ -4,7 +4,7 @@ export const zhNavbar = navbar([
 
     {
         text: "更新日志",
-        icon: "home",
+        icon: "log",
         link: "/home.md"
     },
 
@@ -109,10 +109,10 @@ export const zhNavbar = navbar([
 
     {
         text: "人工智能",
-        icon: "data-structure",
+        icon: "ai",
         prefix: "/ai",
         children: [
-            {text: "OCR", icon: "data-structure", link: "/github/rapid-ocr.md"},
+            {text: "OCR", icon: "ocr", link: "/github/rapid-ocr.md"},
         ],
     },
 
@@ -123,22 +123,32 @@ export const zhNavbar = navbar([
         children: [
             {
                 text: "Git工作流",
-                icon: "dev-tool",
+                icon: "git",
                 link: "/gitflow.md"
             },
             {
                 text: "Nginx",
-                icon: "dev-tool",
+                icon: "nginx",
                 link: "/nginx.md"
             },
         ],
     },
     {
         text: "面试",
-        icon: "data-structure",
+        icon: "interview",
         prefix: "/interview",
         children: [
             {text: "redis", icon: "redis", link: "/github/rapid-ocr.md"},
+        ],
+    },
+
+    {
+        text: "考试",
+        icon: "exam",
+        prefix: "/exam",
+        children: [
+            {text: "软考", icon: "soft", link: "/soft/"},
+            {text: "考研", icon: "graduate", link: "/graduate/"},
         ],
     },
 

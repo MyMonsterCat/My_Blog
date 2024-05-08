@@ -13,10 +13,10 @@ export default hopeTheme({
 
     fullscreen: true,
 
-    iconAssets: "//at.alicdn.com/t/c/font_3981663_1jdvdcv2fsii.css",
+    iconAssets: "//at.alicdn.com/t/c/font_3981663_xnqvb4qjmxl.css",
 
     favicon: "/favicon.png",
-    logo: "/aowu.gif",
+    logo: "/favicon.png",
     logoDark: "/logo.png",
 
     darkmode: "toggle",
@@ -32,8 +32,8 @@ export default hopeTheme({
 
     navbarLayout: {
         start: ["Brand"],
-        center: ["Search"],
-        end: ["Links", "Outlook", "Repo"],
+        center: ["Outlook","Search"],
+        end: [ "Links", "Repo"],
     },
 
     locales: {
@@ -46,9 +46,8 @@ export default hopeTheme({
             copyright: "MIT Licensed | Copyright © 2020-present Monster",
             displayFooter: true,
 
-            metaLocales: {
-                editLink: "在 GitHub 上编辑此页",
-            },
+            editLink: false,
+            
         },
     },
 
