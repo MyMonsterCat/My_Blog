@@ -1,8 +1,12 @@
 import {sidebar} from "vuepress-theme-hope";
-import {JavaSideBar} from "./java";
-import {MySQLSidebar} from "./advance-sql";
-import {AboutSideBar} from "./about";
-import {ComputerSideBar} from "./computer";
+import {ComputerSideBar} from "./01computer";
+import {JavaSideBar} from "./02java";
+import {MySQLSidebar} from "./03advance/mysql";
+import {AiSideBar} from "./04ai";
+import {ToolSideBar} from "./05tool";
+import {InterviewSideBar} from "./06interview";
+import {AboutSideBar} from "./07about";
+
 
 export const zhSidebar = sidebar({
 
@@ -13,7 +17,11 @@ export const zhSidebar = sidebar({
 
     "/advance/sql/": MySQLSidebar,
 
-    "/tool": "structure",
+    "/ai/": AiSideBar,
+
+    "/tool": ToolSideBar,
+
+    "/interview": InterviewSideBar,
 
     "/about/": AboutSideBar,
 });

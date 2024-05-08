@@ -21,7 +21,7 @@ export default hopeTheme({
 
     darkmode: "toggle",
 
-    repo: "https://github.com/MyMonsterCat/note",
+    repo: "https://github.com/MyMonsterCat",
     repoLabel: "GitHub",
     repoDisplay: true,
 

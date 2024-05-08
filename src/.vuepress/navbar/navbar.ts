@@ -75,15 +75,6 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "人工智能",
-        icon: "ai",
-        prefix: "/ai",
-        children: [
-            {text: "OCR", icon: "data-structure", link: "/github/rapid-ocr.md"},
-        ],
-    },
-
-    {
         text: "常用组件",
         icon: "cloud",
         prefix: "/advance",
@@ -117,20 +108,37 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "工具/资料",
+        text: "人工智能",
+        icon: "data-structure",
+        prefix: "/ai",
+        children: [
+            {text: "OCR", icon: "data-structure", link: "/github/rapid-ocr.md"},
+        ],
+    },
+
+    {
+        text: "开发工具",
         icon: "mq",
         prefix: "/tool",
         children: [
             {
-                text: "开发工具",
+                text: "Git工作流",
                 icon: "dev-tool",
-                link: "/development-tool/"
+                link: "/gitflow.md"
             },
             {
-                text: "技术书籍",
-                icon: "book",
-                link: "/books/"
+                text: "Nginx",
+                icon: "dev-tool",
+                link: "/nginx.md"
             },
+        ],
+    },
+    {
+        text: "面试",
+        icon: "data-structure",
+        prefix: "/interview",
+        children: [
+            {text: "redis", icon: "redis", link: "/github/rapid-ocr.md"},
         ],
     },
 
@@ -141,7 +149,6 @@ export const zhNavbar = navbar([
         children: [
             {text: "关于作者", icon: "author", link: "/author"},
             {text: "更新计划", icon: "plan", link: "/plan"},
-            {text: "拾忆", icon: "plan", link: "/recollect"},
         ],
     },
 ]);
