@@ -6,9 +6,11 @@ comment: false
 
 
 
-::: tip 操作系统
+::: tip Redis
 
-- 2023/11/13 ：[2.1 进程与线程](./computer/os/2-1.md)
+- 2024/05/14 ：
+  - [分布式缓存：持久化、主从、哨兵、分片集群](/advance/redis/senior/distributed_cache.md)
+  - [多级缓存：浏览器缓存、Nginx缓存、redis缓存、JVM进程缓存](/advance/redis/senior/multi_level_cache.md)
 
 :::
 

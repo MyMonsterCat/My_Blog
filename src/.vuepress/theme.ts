@@ -40,6 +40,7 @@ export default hopeTheme({
         "/": {
             navbar: zhNavbar,
 
+            headerDepth: 2,
             sidebar: zhSidebar,
 
             footer: '<a href="https://beian.miit.gov.cn" target="_blank"> 鲁ICP备2021006500号</a> | <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43010402000915" ><img src="/beian.png" style="padding: 0 5px" alt="湘公网安备 43010402000915号"/>湘公网安备 43010402000915号</a>',
@@ -47,7 +48,7 @@ export default hopeTheme({
             displayFooter: true,
 
             editLink: false,
-            
+
         },
     },
 

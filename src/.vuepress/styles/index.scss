@@ -1,5 +1,5 @@
 // place your custom styles here
-.sidebar {
+.vp-sidebar {
   box-shadow: 1px 1px 8px #c7c1c1;
   padding-left: 1.5em;
 }
@@ -27,21 +27,21 @@ body {
   font-size: 16px;
 }
 
-.home.project .feature-panel {
-  margin-top: 7.5rem;
-}
+//.home.project .feature-panel {
+//  margin-top: 7.5rem;
+//}
 
-.sidebar-heading .title {
+#sidebar .vp-sidebar-links{
   font-size: 1.1rem;
   font-weight: 700;
   //color: var(--theme-color);
 }
 
-.sidebar a {
+#sidebar a {
   font-weight: 300;
 }
 
-.sidebar-link:hover, .sidebar-heading:hover {
+.vp-link:hover, .vp-sidebar-heading:hover {
   color: var(--theme-color);
 }
 

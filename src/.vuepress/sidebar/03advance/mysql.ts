@@ -132,4 +132,3 @@ export const MySQLSidebar = [
     },
 
 ];
-export const RedisSidebar = [];

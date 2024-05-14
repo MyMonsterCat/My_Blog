@@ -80,13 +80,14 @@ export const zhNavbar = navbar([
         prefix: "/advance",
         children: [
             {
-                text: "数据库",
-                icon: "sql",
-                prefix: "/sql",
-                children: [
-                    {text: "MySQL", icon: "mysql-base", link: "/mysql/README.md"},
-                    {text: "Redis", icon: "redis", link: "/redis/"},
-                ],
+                text: "MySQL",
+                icon: "mysql-base",
+                link: "/mysql/README.md",
+            },
+            {
+                text: "Redis",
+                icon: "redis",
+                link: "/redis/README.md",
             },
             {
                 text: "消息队列",
