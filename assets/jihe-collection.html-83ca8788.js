@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c}from"./app-ff1d42f3.js";const t={};function r(n,_){return o(),c("div")}const s=e(t,[["render",r],["__file","jihe-collection.html.vue"]]);export{s as default};
