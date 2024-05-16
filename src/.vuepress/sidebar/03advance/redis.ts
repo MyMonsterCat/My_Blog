@@ -46,7 +46,20 @@ export const RedisSidebar = [
             {
                 text: "多级缓存",
                 link: "multi_level_cache",
-            }
+            },
+            {
+                text: "Key如何设计",
+                link: "key_design",
+            },
+            {
+                text: "批处理优化",
+                link: "batch_process",
+            },
+            {
+                text: "服务器端优化",
+                link: "server_optimization",
+            },
+
         ],
     },
 
