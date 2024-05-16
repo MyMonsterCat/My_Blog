@@ -23,7 +23,7 @@ Redis的持久化虽然可以保证数据安全，但也会带来很多额外的
 
 慢查询的危害：由于Redis是单线程的，所以当客户端发出指令后，他们都会进入到redis底层的queue来执行，如果此时有一些慢查询的数据，就会导致大量请求阻塞，从而引起报错，所以我们需要解决慢查询问题。
 
-![1653129590210](Redis高级篇之最佳实践.assets/1653129590210.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161543579.png)
 
 慢查询的阈值可以通过配置指定：
 
@@ -33,11 +33,11 @@ slowlog-log-slower-than：慢查询阈值，单位是微秒。默认是10000，�
 
 slowlog-max-len：慢查询日志（本质是一个队列）的长度。默认是128，建议1000
 
-![1653130457771](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653130457771.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161544224.png)
 
 修改这两个配置可以使用：config set命令：
 
-![1653130475979](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653130475979.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161544757.png)
 
 ### 2.2 如何查看慢查询
 
@@ -47,7 +47,7 @@ slowlog-max-len：慢查询日志（本质是一个队列）的长度。默认�
 * slowlog get [n]：读取n条慢查询日志
 * slowlog reset：清空慢查询列表
 
-![1653130858066](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653130858066.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161544667.png)
 
 ## 三、命令及安全配置
 
@@ -101,11 +101,11 @@ Redis底层分配并不是这个key有多大，他就会分配多大，而是有
 
 * info memory：查看内存分配的情况
 
-![1653132073570](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653132073570.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161544359.png)
 
 * memory xxx：查看key的主要占用情况
 
-![1653132098823](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653132098823.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161544917.png)
 
 接下来我们看到了这些配置，最关键的缓存区内存如何定位和解决呢？
 
@@ -119,7 +119,7 @@ Redis底层分配并不是这个key有多大，他就会分配多大，而是有
 
 客户端缓冲区：指的就是我们发送命令时，客户端用来缓存命令的一个缓冲区，也就是我们向redis输入数据的输入端缓冲区和redis向客户端返回数据的响应缓存区，输入缓冲区最大1G且不能设置，所以这一块我们根本不用担心，如果超过了这个空间，redis会直接断开，因为本来此时此刻就代表着redis处理不过来了，我们需要担心的就是输出端缓冲区
 
-![1653132410073](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653132410073.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161544433.png)
 
 我们在使用redis过程中，处理大量的big value，那么会导致我们的输出结果过多，如果输出缓存区过大，会导致redis直接断开，而默认配置的情况下， 其实他是没有大小的，这就比较坑了，内存可能一下子被占满，会直接导致咱们的redis断开，所以解决方案有两个
 
@@ -144,7 +144,7 @@ Redis底层分配并不是这个key有多大，他就会分配多大，而是有
 
 大家可以设想一下，如果有几个slot不能使用，那么此时整个集群都不能用了，我们在开发中，其实最重要的是可用性，所以需要把如下配置修改成no，即有slot不能使用时，我们的redis集群还是可以对外提供服务
 
-![1653132740637](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653132740637.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161543382.png)
 
 **问题2、集群带宽问题**
 

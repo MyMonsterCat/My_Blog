@@ -75,7 +75,7 @@ void testPipeline() {
 
 这个时候，我们可以找到4种解决方案
 
-![1653126446641](/Users/monster/Downloads/Redis高级篇之最佳实践.assets/1653126446641.png)
+![](https://monster-note.oss-cn-hangzhou.aliyuncs.com/blog/redis/202405161545925.png)
 
 第一种方案：串行执行，所以这种方式没有什么意义，当然，执行起来就很简单了，缺点就是耗时过久。
 
