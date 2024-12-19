@@ -39,7 +39,7 @@ export const JavaSideBar = [
                 collapsible: true,
                 prefix: "/java/senior/juc",
                 children: [
-                    "base01",
+                    "01Thread",
                 ],
             },
         ],

@@ -3,9 +3,9 @@ import {navbar} from "vuepress-theme-hope";
 export const zhNavbar = navbar([
 
     {
-        text: "更新日志",
-        icon: "log",
-        link: "/home.md"
+        text: "Chat",
+        // icon: "log",
+        link: "https://chat.monstercat.cn/"
     },
 
     {
@@ -84,11 +84,19 @@ export const zhNavbar = navbar([
                 icon: "mysql-base",
                 link: "/mysql/README.md",
             },
+
             {
                 text: "Redis",
                 icon: "redis",
                 link: "/redis/README.md",
             },
+
+            {
+                text: "Nginx",
+                icon: "nginx",
+                link: "/nginx/nginx.md"
+            },
+
             {
                 text: "消息队列",
                 icon: "mq",
@@ -118,48 +126,45 @@ export const zhNavbar = navbar([
     },
 
     {
-        text: "开发工具",
+        text: "工具",
         icon: "mq",
         prefix: "/tool",
         children: [
             {
-                text: "Git工作流",
-                icon: "git",
-                link: "/gitflow.md"
+                text: "UML",
+                icon: "",
+                link: "/uml.md"
             },
             {
-                text: "Nginx",
-                icon: "nginx",
-                link: "/nginx.md"
+                text: "LeeCode",
+                icon: "",
+                link: "https://leetcode.cn/problemset/"
             },
         ],
     },
     {
-        text: "面试",
+        text: "面经",
         icon: "interview",
-        prefix: "/interview",
-        children: [
-            {text: "redis", icon: "redis", link: "/github/rapid-ocr.md"},
-        ],
+        link: "/interview/redis.md",
     },
 
-    {
-        text: "考试",
-        icon: "exam",
-        prefix: "/exam",
-        children: [
-            {text: "软考", icon: "soft", link: "/soft/"},
-            {text: "考研", icon: "graduate", link: "/graduate/"},
-        ],
-    },
+    // {
+    //     text: "考试",
+    //     icon: "exam",
+    //     prefix: "/exam",
+    //     children: [
+    //         {text: "软考", icon: "soft", link: "/soft/"},
+    //         {text: "考研", icon: "graduate", link: "/graduate/"},
+    //     ],
+    // },
 
-    {
-        text: "网站相关",
-        icon: "about",
-        prefix: "/about",
-        children: [
-            {text: "关于作者", icon: "author", link: "/author"},
-            {text: "更新计划", icon: "plan", link: "/plan"},
-        ],
-    },
+    // {
+    //     text: "网站相关",
+    //     icon: "about",
+    //     prefix: "/about",
+    //     children: [
+    //         {text: "关于作者", icon: "author", link: "/author"},
+    //         {text: "更新计划", icon: "plan", link: "/plan"},
+    //     ],
+    // },
 ]);

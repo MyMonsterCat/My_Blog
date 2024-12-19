@@ -32,8 +32,8 @@ export default hopeTheme({
 
     navbarLayout: {
         start: ["Brand"],
-        center: ["Outlook","Search"],
-        end: [ "Links", "Repo"],
+        center: ["Links"],
+        end: ["Search","Outlook","Repo"],
     },
 
     locales: {
